@@ -1,0 +1,495 @@
+/* Variablen */
+
+$small: 768px
+$med: 900px
+$large: 1200px
+
+
+* 
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+html, body
+    max-width: 100%
+    overflow-x: hidden
+
+a 
+    text-decoration: none
+
+ul 
+    list-style-type: none
+
+@font-face 
+    font-family: Bebas
+    src: url(fonts/Bebas.woff) format('woff'), url(fonts/Bebas.ttf) format('truetype')
+
+body
+    font-family: 'Open Sans', sans-serif
+
+h1 
+    font-family: Bebas
+    font-weight: 300
+
+h2 
+    font-family: Bebas
+    font-weight: 300
+
+.clearfix 
+    clear: both
+
+.content 
+    width: 100%
+    max-width: 1200px
+    margin: auto
+    padding: 0 5%
+   
+
+nav 
+    width: 100%
+    height: 100px
+    background-color: white
+    box-shadow: 0 4px 1px -1px  black
+    z-index: 100
+    @media screen and (max-width: $med)
+        height: 65px
+    
+    img 
+        float: left
+        padding-top: 19px
+
+        @media screen and (max-width: $med)
+            height: 55px
+            //margin-left: 5%
+
+    ul 
+        float: right
+        @media screen and (max-width: $med)
+            display: none
+        li 
+            float: left
+            padding: 5px
+            text-transform: uppercase
+            line-height: 100px
+        a 
+            color: black
+            &:hover 
+                color: #aa7b28
+
+
+
+
+#cta_top 
+    width: 113px
+    height: 63px
+    background-image: url(bilder/ctatop.png)
+    background-size: cover
+    position: relative
+    top: 0
+    right: -500px
+    box-shadow: 0 4px 1px -1px  black
+    @media screen and (max-width: $med)
+        top: 0px
+    @media screen and (max-width: $small)
+        display: none
+    
+    
+    p 
+        font-family: Bebas
+        position: absolute
+        top: 23px
+        left: 20px
+        font-size: 30px
+        color: white
+
+
+header 
+    width: 100%
+    height: 650px
+    background: url(bilder/headerbg.jpg) no-repeat scroll
+    background-size: cover
+    @media screen and (max-width: $med)
+        height: 250px
+        background-position: left
+    
+
+#headertext 
+    width: 860px
+    position: relative
+    top: 150px
+    left: 10%
+    color: #fff
+    background-image: url(bilder/logo_dreiecktrans.png)
+    background-repeat: no-repeat
+    background-position: 385px 0
+    padding-left: 12px
+    padding-top: 49px
+    @media screen and (max-width: $med)
+        top: 0px
+        background-position: 200px 0
+    @media screen and (max-width: $small)
+        background-image: none
+    
+    article 
+        border-left: solid 1px  white
+        padding-left: 12px
+
+    h1 
+        font-size: 88px
+        line-height: 75px
+        margin-bottom: 28px
+        @media screen and (max-width: $med)
+            font-size: 44px
+            line-height: 38px
+            
+
+    h2 
+        font-size: 35px
+        @media screen and (max-width: $med)
+            font-size: 24px
+            line-height: 0.9
+
+
+.braun 
+    color: #aa7b28
+
+#leistungen 
+    width: 100%
+    padding-bottom: 85px
+    @media screen and (max-width: $med)
+        padding-bottom: 35px
+        
+    h2 
+        text-align: center
+        font-size: 48px
+        padding-top: 85px
+        padding-bottom: 40px
+        font-weight: 300
+        @media screen and (max-width: $med)
+            font-size: 36px
+            padding-top: 35px
+            padding-bottom: 15px
+
+    .line 
+        margin-bottom: 60px
+        @media screen and (max-width: $med)
+            margin-bottom: 25px
+
+    
+    .wrapper
+        width: 100%
+        margin: auto
+    @media screen and (max-width: $med)
+        .wrapper
+            //width: 80%
+            //margin: auto
+
+    article 
+        width: 30%
+        height: 550px
+        border: solid 1px #aa7b28
+        padding: 50px
+        box-sizing: border-box
+        float: left
+        margin: 0 1.5%
+        text-align: center
+        &:hover 
+            background-color: rgba(170, 123, 40, 0.1)
+
+        &:last-child
+        @media screen and (max-width: $med)
+            clear: both
+            height: 275px
+            margin: 0 0
+            width: 100%
+            margin-bottom: 20px
+            padding: 25px
+            @media screen and (max-width: $small)
+                //height: 350px
+                //padding: 20px
+                
+                
+        img
+            width: 80%
+            max-width: 150px
+            @media screen and (max-width: $med)
+                height: 80px
+                width: auto
+            @media screen and (max-width: $small)
+                height: 60px
+                width: auto
+            
+            
+        
+   
+          
+
+        h3 
+            text-align: center
+            padding: 30px 0
+            @media screen and (max-width: $med)
+                padding: 15px 0
+
+        .line 
+            margin-bottom: 30px
+            @media screen and (max-width: $med)
+                margin-bottom: 15px
+
+        p 
+            text-align: center
+            padding-bottom: 30px
+            font-size: 14px
+            @media screen and (max-width: $med)
+                width: 70%
+                margin: auto
+
+        a 
+            color: black
+            font-size: 14px
+            line-height: 40px
+            @media screen and (max-width: $med)
+                display: none
+
+
+.line 
+    width: 54px
+    border-bottom: 1px solid #aa7b28
+    margin: auto
+
+
+#dreieck_sml 
+    width: 17px
+    height: 17px
+    background-image: url(bilder/dreieckicon.jpg)
+    background-size: contain
+    background-repeat: no-repeat
+    transform: rotate(180deg)
+    margin: auto
+    @media screen and (max-width: $med)
+        display: none
+
+#projekte 
+    width: 100%
+    height: 795px
+    background-image: url(bilder/bgmixer.jpg)
+    @media screen and (max-width: $med)
+        height: 650px
+        
+        
+    .line 
+        margin-bottom: 60px
+        @media screen and (max-width: $med)
+            margin-bottom: 25px
+
+    ul 
+        width: 50%
+        height: 415px
+        float: right
+        padding-left: 30px
+        box-sizing: border-box
+        @media screen and (max-width: $med)
+            display: none
+        li 
+            height: 110px
+            margin-bottom: 43px
+            @media screen and (max-width: $med)
+            
+            
+            img 
+                float: left
+                padding-right: 20px
+                
+            
+
+
+
+    article 
+        height: 415px
+        background-image: url(bilder/merryjudgebig.jpg)
+        background-size: cover
+        width: 50%
+        float: left
+        @media screen and (max-width: $med)
+            width: 100%
+
+    h2 
+        text-align: center
+        font-size: 48px
+        padding-top: 85px
+        padding-bottom: 40px
+        font-weight: 300
+        color: white
+        @media screen and (max-width: $med)
+            font-size: 36px
+            padding-bottom: 15px
+            padding-top: 35px
+
+    h3 
+        color: white
+        font-weight: 300
+
+    p 
+        color: white
+        font-size: 14px
+        font-weight: 200
+
+
+#about 
+    width: 100%
+    padding-bottom: 85px
+    @media screen and (max-width: $med)
+        padding-top: 35px
+        
+    .line 
+        margin-bottom: 60px
+        @media screen and (max-width: $med)
+            margin-bottom: 25px
+
+    h2 
+        text-align: center
+        font-size: 48px
+        //padding-top: 85px
+        padding-bottom: 40px
+        font-weight: 300
+        @media screen and (max-width: $med)
+            font-size: 36px
+            padding-bottom: 15px
+            
+
+    article 
+        box-sizing: border-box
+        @media screen and (max-width: $med)
+            margin: auto
+            text-align: center
+            width: 50%
+     
+        p 
+            text-align: right
+            @media screen and (max-width: $med)
+                //text-align: center
+
+        h3 
+            text-align: right
+            &:last-child 
+                text-align: left
+            @media screen and (max-width: $med)
+                //text-align: center
+
+
+        img 
+            padding: 0 35px
+            @media screen and (max-width: $med)
+                padding: 35px
+    
+        #articlebox
+            @media screen and (max-width: $med)
+                display: none
+
+
+
+
+
+#kontakt 
+    background-color: #aa7b28
+    h2 
+        text-align: center
+        font-size: 48px
+        padding-top: 85px
+        padding-bottom: 40px
+        font-weight: 300
+        @media screen and (max-width: $med)
+            font-size: 36px
+            padding-top: 35px
+            padding-bottom: 15px
+
+    .line 
+        margin-bottom: 60px
+        border-bottom: 1px solid  white
+        @media screen and (max-width: $med)
+            margin-bottom: 25px
+
+    article 
+        box-sizing: border-box
+        display: inline-block
+        float: left
+        width: 45%
+        height: 300px
+        background-color: white
+        padding-left: 100px
+        padding-top: 40px
+        margin-bottom: 85px
+        box-shadow: 0 4px 2px -2px  black
+        @media screen and (max-width: $med)
+            background: none
+            box-shadow: none
+            float: none
+            margin: auto
+            
+
+    img 
+        float: left
+        margin-top: 30px
+
+    h3 
+        margin-left: 100px
+
+    p 
+        margin-left: 100px
+
+
+#place 
+    height: 80px
+    img 
+        margin-top: 20px
+
+
+#fon 
+    height: 80px
+    line-height: 100px
+
+#mail 
+    height: 80px
+    line-height: 100px
+
+#kontaktform 
+    height: 250px
+    background-color: white
+    width: 45%
+    float: right
+    text-align: center
+    padding-top: 50px
+    box-shadow: 0 4px 2px -2px  black
+    display: none
+
+footer 
+    width: 100%
+    height: 100px
+    background-color: #282828
+    text-align: center
+    p 
+        color: white
+        padding-top: 20px
+
+
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    
