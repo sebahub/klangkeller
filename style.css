@@ -183,6 +183,10 @@ header {
         width: 100%;
         margin-bottom: 20px;
         padding: 25px; } }
+  @media screen and (max-width: 900px) and (max-width: 768px) {
+    #leistungen article {
+      height: 200px; } }
+
     #leistungen article img {
       width: 80%;
       max-width: 150px; }
@@ -192,8 +196,10 @@ header {
           width: auto; } }
       @media screen and (max-width: 768px) {
         #leistungen article img {
-          height: 60px;
-          width: auto; } }
+          height: 90px;
+          width: auto;
+          float: right;
+          margin-top: 20px; } }
     #leistungen article h3 {
       text-align: center;
       padding: 30px 0; }
@@ -213,6 +219,10 @@ header {
         #leistungen article p {
           width: 70%;
           margin: auto; } }
+  @media screen and (max-width: 900px) and (max-width: 768px) {
+    #leistungen article p {
+      width: 100%; } }
+
     #leistungen article a {
       color: black;
       font-size: 14px;
@@ -220,6 +230,16 @@ header {
       @media screen and (max-width: 900px) {
         #leistungen article a {
           display: none; } }
+    @media screen and (max-width: 768px) {
+      #leistungen article .leistungentext {
+        float: left;
+        width: 70%;
+        display: inline-block; }
+        #leistungen article .leistungentext h3, #leistungen article .leistungentext p {
+          text-align: left;
+          margin: 0; }
+        #leistungen article .leistungentext h3 {
+          width: 70%; } }
 
 .line {
   width: 54px;
@@ -296,10 +316,12 @@ header {
 
 #about {
   width: 100%;
-  padding-bottom: 85px; }
+  padding-bottom: 85px;
+  margin-top: 85px; }
   @media screen and (max-width: 900px) {
     #about {
-      padding-top: 35px; } }
+      padding-top: 35px;
+      margin-top: 0; } }
   #about .line {
     margin-bottom: 60px; }
     @media screen and (max-width: 900px) {
@@ -315,29 +337,37 @@ header {
         font-size: 36px;
         padding-bottom: 15px; } }
   #about article {
-    box-sizing: border-box; }
-    @media screen and (max-width: 900px) {
+    width: 49%; }
+    @media screen and (max-width: 1200px) {
+      #about article img {
+        width: 20%;
+        height: auto; } }
+    @media screen and (max-width: 768px) {
       #about article {
-        margin: auto;
-        text-align: center;
-        width: 50%; } }
-    #about article p {
-      text-align: right; }
-    #about article h3 {
-      text-align: right; }
-      #about article h3:last-child {
-        text-align: left; }
-    #about article img {
-      padding: 0 35px; }
-      @media screen and (max-width: 900px) {
-        #about article img {
-          padding: 35px; } }
-    @media screen and (max-width: 900px) {
-      #about article #articlebox {
-        display: none; } }
+        clear: both;
+        width: 100%; } }
+  #about #articletext {
+    float: left;
+    width: 65%; }
+  #about article:first-child {
+    float: left; }
+    #about article:first-child img {
+      float: right; }
+    @media screen and (max-width: 768px) {
+      #about article:first-child {
+        margin-bottom: 30px; } }
+  #about #articletext2 {
+    float: right;
+    width: 65%; }
+  #about article:last-child {
+    float: right; }
+    #about article:last-child img {
+      float: left;
+      margin-right: 10px; }
 
 #kontakt {
-  background-color: #aa7b28; }
+  background-color: #aa7b28;
+  margin-top: 85px; }
   #kontakt h2 {
     text-align: center;
     font-size: 48px;
@@ -356,42 +386,14 @@ header {
       #kontakt .line {
         margin-bottom: 25px; } }
   #kontakt article {
-    box-sizing: border-box;
-    display: inline-block;
-    float: left;
-    width: 45%;
-    height: 300px;
-    background-color: white;
-    padding-left: 100px;
-    padding-top: 40px;
-    margin-bottom: 85px;
-    box-shadow: 0 4px 2px -2px black; }
-    @media screen and (max-width: 900px) {
-      #kontakt article {
-        background: none;
-        box-shadow: none;
-        float: none;
-        margin: auto; } }
-  #kontakt img {
-    float: left;
-    margin-top: 30px; }
-  #kontakt h3 {
-    margin-left: 100px; }
-  #kontakt p {
-    margin-left: 100px; }
-
-#place {
-  height: 80px; }
-  #place img {
-    margin-top: 20px; }
-
-#fon {
-  height: 80px;
-  line-height: 100px; }
-
-#mail {
-  height: 80px;
-  line-height: 100px; }
+    width: 50%;
+    margin: auto; }
+    #kontakt article .felder {
+      width: 150px;
+      margin: auto; }
+      #kontakt article .felder img {
+        width: 40px;
+        margin: auto; }
 
 #kontaktform {
   height: 250px;
@@ -411,5 +413,9 @@ footer {
   footer p {
     color: white;
     padding-top: 20px; }
+
+@media screen and (max-width: 768px) {
+  .line {
+    display: none; } }
 
 /*# sourceMappingURL=style.css.map */
