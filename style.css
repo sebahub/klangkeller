@@ -162,7 +162,7 @@ header {
       #leistungen .line {
         margin-bottom: 25px; } }
   #leistungen .wrapper {
-    width: 100%;
+    width: 95%;
     margin: auto; }
   #leistungen article {
     width: 30%;
@@ -200,6 +200,10 @@ header {
           width: auto;
           float: right;
           margin-top: 20px; } }
+      @media screen and (max-width: 500px) {
+        #leistungen article img {
+          height: 50px;
+          width: auto; } }
     #leistungen article h3 {
       text-align: center;
       padding: 30px 0; }
@@ -252,7 +256,9 @@ header {
   background-image: url(bilder/dreieckicon.jpg);
   background-size: contain;
   background-repeat: no-repeat;
-  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
   margin: auto; }
   @media screen and (max-width: 900px) {
     #dreieck_sml {
